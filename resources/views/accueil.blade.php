@@ -158,7 +158,7 @@
           {{ csrf_field() }}
           <div class="form-group">
             <label for="">Jour où vous êtes libre</label>
-            <select name="date_coaching" class="form-control" style="">
+            <select name="date_coaching" class="form-control" style="" required>
               <option value="Lundi">Lundi</option>
               <option value="Mardi">Mardi</option>
               <option value="Mercredi">Mercredi</option>
@@ -170,7 +170,7 @@
           </div>
           <div class="form-group">
             <label for="">Formation pour laquelle vous voulez un accompagnement</label>
-            <select name="formation" class="form-control" style="">
+            <select name="formation" class="form-control" style="" required>
               <option value="Développement web">Développement web</option>
               <option value="Développement de Jeux Vidéos">Développement de Jeux Vidéos</option>
               <option value="Community Management">Community Management</option>
@@ -182,19 +182,19 @@
           </div>
           <div class="form-group">
             <label for="">Email de votre compte Oschool:</label>
-            <input type="email" class="form-control" id="" placeholder="Email" name="email">
+            <input type="email" class="form-control" id="" placeholder="Email" name="email" required>
           </div>
           <div class="form-group">
             <label for="">Nom</label>
-            <input type="text" class="form-control" id="" placeholder="Nom" name="nom">
+            <input type="text" class="form-control" id="" placeholder="Nom" name="nom" required>
           </div>
           <div class="form-group">
             <label for="">Prénoms</label>
-            <input type="text" class="form-control" id="" placeholder="Prénoms" name="prenoms">
+            <input type="text" class="form-control" id="" placeholder="Prénoms" name="prenoms" required>
           </div>
           <div class="form-group">
             <label for="">Numéro de téléphone</label>
-            <input type="text" class="form-control" id="" placeholder="Téléphone" name="tel">
+            <input type="text" class="form-control" id="" placeholder="Téléphone" name="tel" required>
           </div>
           <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>
@@ -258,7 +258,7 @@
           {{ csrf_field() }}
           <div class="form-group">
             <label for="">Jour où vous êtes libre</label>
-            <select name="date_coaching" class="form-control" style="">
+            <select name="date_coaching" class="form-control" style="" required>
               <option value="Lundi">Lundi</option>
               <option value="Mardi">Mardi</option>
               <option value="Mercredi">Mercredi</option>
@@ -270,7 +270,7 @@
           </div>
           <div class="form-group">
             <label for="">Formation pour laquelle vous voulez un accompagnement</label>
-            <select name="formation" class="form-control" style="">
+            <select name="formation" class="form-control" style="" required>
               <option value="Développement web">Développement web</option>
               <option value="Développement de Jeux Vidéos">Développement de Jeux Vidéos</option>
               <option value="Community Management">Community Management</option>
@@ -282,19 +282,19 @@
           </div>
           <div class="form-group">
             <label for="">Email de votre compte Oschool:</label>
-            <input type="email" class="form-control" id="" placeholder="Email" name="email">
+            <input type="email" class="form-control" id="" placeholder="Email" name="email" required>
           </div>
           <div class="form-group">
             <label for="">Nom</label>
-            <input type="text" class="form-control" id="" placeholder="Nom" name="nom">
+            <input type="text" class="form-control" id="" placeholder="Nom" name="nom" required>
           </div>
           <div class="form-group">
             <label for="">Prénoms</label>
-            <input type="text" class="form-control" id="" placeholder="Prénoms" name="prenoms">
+            <input type="text" class="form-control" id="" placeholder="Prénoms" name="prenoms" required>
           </div>
           <div class="form-group">
             <label for="">Numéro de téléphone</label>
-            <input type="text" class="form-control" id="" placeholder="Téléphone" name="tel">
+            <input type="text" class="form-control" id="" placeholder="Téléphone" name="tel" required>
           </div>
           <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>

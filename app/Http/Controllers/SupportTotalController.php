@@ -120,12 +120,15 @@ class SupportTotalController extends Controller
                         'tel' => Session::get('tel')
                       ]);
 
+        //envoi mail utilisateur
       Mail::send('mailsTotal.mail', ['supportTotal' => $supportTotal], function($message) use ($supportTotal){
-        $message->to($supportTotal->email, 'Cher(ère) Etudiant(e)')->subject('Votre support Oschool est activé');
+        $message->to($supportTotal->email, 'Cher(ère) Etudiant(e)')->subject('Votre support Total Oschool est activé');
         $message->from('support@oschool.ci', 'Oschool');
       });
+
+      //envoi mail admin
       Mail::send('mailsTotal.mail-admin', ['supportTotal' => $supportTotal], function($message) use ($supportTotal){
-        $message->to('david@oschool.ci', 'A David')->subject('Notification pour nouvel achat de support');
+        $message->to('david@oschool.ci', 'A David')->subject('Notification pour nouvel achat de support Total');
         $message->from('support@oschool.ci', 'Oschool');
       });
       return redirect('/')->with('status', 'Achat validé ! Votre supportTotal a été envoyé dans votre boîte de réception. Merci de la consulter.');

@@ -120,13 +120,15 @@ class SupportOnlineController extends Controller
                         'tel' => Session::get('tel')
                       ]);
 
-
+     //envpi mail utilisateur
       Mail::send('mailsOnline.mail', ['supportOnline' => $supportOnline], function($message) use ($supportOnline){
-        $message->to($supportOnline->email, 'Cher(ère) Etudiant(e)')->subject('Votre support Oschool est activé');
+        $message->to($supportOnline->email, 'Cher(ère) Etudiant(e)')->subject('Votre support Online Oschool est activé');
         $message->from('support@oschool.ci', 'Oschool');
       });
+
+      //envoi mail admin
       Mail::send('mailsOnline.mail-admin', ['supportOnline' => $supportOnline], function($message) use ($supportOnline){
-        $message->to('david@oschool.ci', 'A David')->subject('Notification pour nouvel achat de support');
+        $message->to('david@oschool.ci', 'A David')->subject('Notification pour nouvel achat de support Online');
         $message->from('support@oschool.ci', 'Oschool');
       });
       return redirect('/')->with('status', 'Achat validé ! Votre supportOnline a été envoyé dans votre boîte de réception. Merci de la consulter.');

@@ -181,9 +181,9 @@
                             <table border="0" cellpadding="0" cellspacing="0" id="templateContainerMiddleBtm" width="100%">
                                 <tr>
                                     <td class="bodyContent" valign="top" mc:edit="welcomeEdit-11">
-                                        <h3><strong>Aidez votre candidate préférée à gagner, en votant pour elle !</strong></h3>
+                                        <h3><strong>Apprenez toujours avec Oschool !</strong></h3>
 
-                                        <h4></h4><a class="blue-btn" href="https://minaci.oschool.ci"><strong>Voter</strong></a>
+                                        <h4></h4><a class="blue-btn" href="https://oschool.ci"><strong>Voter</strong></a>
                                     </td>
                                 </tr>
                             </table>
@@ -198,14 +198,10 @@
                                     <td valign="top" width="100%" mc:edit="welcomeEdit-11">
                                         <p style="text-align:center;"><img src="http://c0185784a2b233b0db9b-d0e5e4adc266f8aacd2ff78abb166d77.r51.cf2.rackcdn.com/templates/cog-03.jpg" style="margin:0 auto 0 auto;display:inline-block;"></p>
 
-                                        <h6 style="text-align:center;margin-top: 9px;">Minaci 2018</h6>
-
-                                        <h6 style="text-align:center;">ISTC&#8203;</h6>
-
-                                        <h6 style="text-align:center;">Cocody&#8203; </h6>
+                                        <h6 style="text-align:center;margin-top: 9px;">Oschool</h6>
 
                                         <h6 style="text-align:center;margin-top: 7px;"><a href=
-                    "https://minaci.oschool.ci">Minaci 2018</a></h6>
+                    "https://rikudotech.com">Par Rikudo Technologies</a></h6>
                                     </td>
                                 </tr>
                             </table>
