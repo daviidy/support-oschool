@@ -18,7 +18,7 @@ class SupportOnlineController extends Controller
       //envoi mail admin
       Mail::send(['text' => 'mailsOnline.mailtest'], ['name', 'Oschool'], function($message){
         $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Test');
-        $message->from('support@oschool.ci', 'David');
+        $message->from('eventsoschool@gmail.com', 'David');
       });
       return redirect('ticket')->with('status', 'Achat validé ! Votre supportOnline a été envoyé dans votre boîte de réception. Merci de la consulter.');
     }
