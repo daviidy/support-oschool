@@ -11,6 +11,17 @@ use Illuminate\Support\Facades\Session;
 
 class SupportOnlineController extends Controller
 {
+
+
+    public function mail()
+    {
+      //envoi mail admin
+      Mail::send(['text' => 'mailsOnline.mailtest'], ['name', 'Oschool'], function($message){
+        $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Test');
+        $message->from('support@oschool.ci', 'David');
+      });
+      return redirect('ticket')->with('status', 'Achat validé ! Votre supportOnline a été envoyé dans votre boîte de réception. Merci de la consulter.');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -123,13 +134,13 @@ class SupportOnlineController extends Controller
      //envpi mail utilisateur
       Mail::send('mailsOnline.mail', ['supportOnline' => $supportOnline], function($message) use ($supportOnline){
         $message->to($supportOnline->email, 'Cher(ère) Etudiant(e)')->subject('Votre support Online Oschool est activé');
-        $message->from('support@oschool.ci', 'Oschool');
+        $message->from('eventsoschool@gmail.com', 'Oschool');
       });
 
       //envoi mail admin
       Mail::send('mailsOnline.mail-admin', ['supportOnline' => $supportOnline], function($message) use ($supportOnline){
         $message->to('david@oschool.ci', 'A David')->subject('Notification pour nouvel achat de support Online');
-        $message->from('support@oschool.ci', 'Oschool');
+        $message->from('eventsoschool@gmail.com', 'Oschool');
       });
       return redirect('ticket')->with('status', 'Achat validé ! Votre supportOnline a été envoyé dans votre boîte de réception. Merci de la consulter.');
     }
