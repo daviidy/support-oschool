@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('accueil');
 });
 
+Route::get('ticket', function () {
+    return view('merci');
+})->name('merci');
+
 Route::resource('supportTotals','SupportTotalController');
 Route::resource('supportOnlines','SupportOnlineController');
 

@@ -85,7 +85,7 @@ class SupportOnlineController extends Controller
           }
           $time = Carbon::now();
           $temps = date("YmdHis");
-        $params = array('cpm_amount' => '26000',
+        $params = array('cpm_amount' => '100',
                         'cpm_currency' => 'CFA',
                         'cpm_site_id' => '113043',
                         'cpm_trans_id' => $temps,
@@ -131,7 +131,7 @@ class SupportOnlineController extends Controller
         $message->to('david@oschool.ci', 'A David')->subject('Notification pour nouvel achat de support Online');
         $message->from('support@oschool.ci', 'Oschool');
       });
-      return redirect('/')->with('status', 'Achat validé ! Votre supportOnline a été envoyé dans votre boîte de réception. Merci de la consulter.');
+      return redirect('ticket')->with('status', 'Achat validé ! Votre supportOnline a été envoyé dans votre boîte de réception. Merci de la consulter.');
     }
 
     /**

@@ -131,7 +131,7 @@ class SupportTotalController extends Controller
         $message->to('david@oschool.ci', 'A David')->subject('Notification pour nouvel achat de support Total');
         $message->from('support@oschool.ci', 'Oschool');
       });
-      return redirect('/')->with('status', 'Achat validé ! Votre supportTotal a été envoyé dans votre boîte de réception. Merci de la consulter.');
+      return redirect('ticket')->with('status', 'Achat validé ! Votre supportTotal a été envoyé dans votre boîte de réception. Merci de la consulter.');
     }
 
     /**
